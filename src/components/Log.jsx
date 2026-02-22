@@ -1,4 +1,4 @@
-export default function log({turns}){
+export default function Log({turns}){
     return <ol id="log">
         {turns.map(turn =><li key={`${turn.square.row}${turn.square.col}`}>{turn.player} 
             seleted {turn.square.row},{turn.square.col}</li>)}
